@@ -479,7 +479,11 @@
 <p>java -version 查看起作用的版本。<br><img src="https://img-blog.csdnimg.cn/20200313164512596.png" alt="Snipaste_2020-03-13_11-21-30"></p>
 <h6 id="动手任务三：编写HelloWorld"><a href="#动手任务三：编写HelloWorld" class="headerlink" title="动手任务三：编写HelloWorld"></a>动手任务三：编写HelloWorld</h6><p>创捷目录，不要有汉字。<br>1.打开笔记本： 窗口+R：notepad</p>
 <p>输入代码</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">HelloWorld</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String [] arge)</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"HEllo..."</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<pre><code class="Java">public class HelloWorld {
+    public static void main(String [] arge){
+        System.out.println(&quot;HEllo...&quot;);
+    }
+}</code></pre>
 <p>2.保存文件    </p>
 <p>注意文件名字的大小写，后缀为java，保存类型为所用文件。编码类型记得更改。<br>3.编译程序 javac<br>调出控制窗口<br>切换盘符，走到自己的目录。 e:回车    </p>
 <p><img src="https://img-blog.csdnimg.cn/20200313164612427.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDc4NzQ5OA==,size_16,color_FFFFFF,t_70" alt="Snipaste_2020-03-13_12-03-46"><br>tab键自动补充后面的文件的名字<br>cd： change directory<br>生成.class文件<br><img src="https://img-blog.csdnimg.cn/20200313164529731.png" alt="Snipaste_2020-03-13_11-48-59">  </p>
@@ -487,7 +491,7 @@
 <p>使用ue打开HelloWorld.class<br><img src="https://img-blog.csdnimg.cn/20200313164546157.png" alt="Snipaste_2020-03-13_12-23-37"><br><strong>左边为地址，右边为汇编语言，注意所有.class文件的开头都是CA FE BA BE，十六进制的数字。 （面试题）</strong></p>
 <p>字就是被修饰的那个。一个java文件当中可以有好多个类，但是只能有一个public修饰。如果没有public修饰，文件名随意命名。  </p>
 <p>每个java程序都有入口，就是main，写法固定  </p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span> <span class="params">(String [] arge)</span></span></span><br></pre></td></tr></table></figure>
+<pre><code class="java">public static void main (String [] arge)</code></pre>
 <p><strong>面试题：编译过程区分大小写吗？</strong><br><strong>window不区分，其他区分。</strong><br><strong>执行区分大小写吗？</strong><br><strong>区分大小写。</strong><br><strong>总结：编译不分区，执行区分。</strong></p>
 <p>一个类被public修饰，那么文件名就是被public所修饰的那个类  </p>
 <h4 id="口述题"><a href="#口述题" class="headerlink" title="口述题"></a>口述题</h4><h5 id="一-JDK，JRE，JVM的关系是什么？（解释，他们是什么再说他们的关心）"><a href="#一-JDK，JRE，JVM的关系是什么？（解释，他们是什么再说他们的关心）" class="headerlink" title="一.JDK，JRE，JVM的关系是什么？（解释，他们是什么再说他们的关心）"></a>一.JDK，JRE，JVM的关系是什么？（解释，他们是什么再说他们的关心）</h5><p><a href="https://www.cnblogs.com/liulei5210/p/10115130.html" target="_blank" rel="noopener">https://www.cnblogs.com/liulei5210/p/10115130.html</a><br>JDK：Java Development Kit     java开发工具<br>JRE：Java Runtime Environmen  java运行环境<br>JVM：Java Virtual Machine  Java虚拟机<br>关系：JDK 包含JRE,JRE包含JVM。</p>
@@ -506,10 +510,26 @@
 <h4 id="独立任务"><a href="#独立任务" class="headerlink" title="独立任务"></a>独立任务</h4><h5 id="任务一：-看java历史："><a href="#任务一：-看java历史：" class="headerlink" title="任务一： 看java历史："></a>任务一： 看java历史：</h5><p>任职于太阳微系统的詹姆斯•高斯林等人于1990年代初开发Java语言的雏形，最初被命名为Oak，目标设置在家用电器等小型系统的程序语言，应用在电视机、电话、闹钟、烤面包机等家用电器的控制和通信。<br>由于这些智能化家电的市场需求没有预期的高，Sun公司放弃了该项计划。随着1990年代互联网的发展，Sun公司看见Oak在互联网上应用的前景，于是改造了Oak，于1995年5月以Java的名称正式发布。Java伴随着互联网的迅猛发展而发展，逐渐成为重要的网络编程语言。<br>Java语言的发展历史分为以下几个阶段：<br>1991 年Sun公司的James Gosling等人开始开发名称为 Oak 的语言。希望用于控制嵌入在有线电视交换盒、PDA等的微处理器<br>1994年将Oak语言更名为Java<br>1998年JDK1.2时，更名为Java 2 Platform<br>分为标准版J2SE,企业版J2EE,微型版J2ME<br>Java 既安全、可移植，又可跨平台，而且人们发现它能够解决Internet 上的大型应用问题<br>Internet使Java成为网上最流行的编程语言<br>Java对Internet的影响也意义深远<br>B/S的兴起 &amp; C/S的没落   </p>
 <h5 id="任务二：编程任务"><a href="#任务二：编程任务" class="headerlink" title="任务二：编程任务"></a>任务二：编程任务</h5><p>编程任务1： 在学员管理系统中，需要输出如下信息：<br>我是英才学员，以下是我的基本信息：<br>姓名：<strong>*<br>性别：*<br>学校：***</strong><br>籍贯：<strong>**<br>电话：<strong>***</strong></strong></p>
 <p>*号换成自己的信息</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Hi</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String [] x)</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"我是英才学员，以下是我的基本信息："</span>);</span><br><span class="line">        System.out.println(<span class="string">"姓名：李则毅"</span>);</span><br><span class="line">        System.out.println(<span class="string">"性别：男"</span>);</span><br><span class="line">        System.out.println(<span class="string">"学校：太原工业学院"</span>);</span><br><span class="line">        System.out.println(<span class="string">"籍贯：天津"</span>);</span><br><span class="line">        System.out.println(<span class="string">"电话：13043206144"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+<pre><code class="java">public class Hi {
+    public static void main(String [] x){
+        System.out.println(&quot;我是英才学员，以下是我的基本信息：&quot;);
+        System.out.println(&quot;姓名：李则毅&quot;);
+        System.out.println(&quot;性别：男&quot;);
+        System.out.println(&quot;学校：太原工业学院&quot;);
+        System.out.println(&quot;籍贯：天津&quot;);
+        System.out.println(&quot;电话：13043206144&quot;);
+    }
+}</code></pre>
 <p>任务二：  购物清单<br>商品名称     购买数量     单价      合计<br>水杯                 1           20        20<br>书包                 2          120       240</p>
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">lists</span> </span>&#123;</span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">static</span> <span class="keyword">void</span> <span class="title">main</span><span class="params">(String [] x)</span></span>&#123;</span><br><span class="line">        System.out.println(<span class="string">"        购物清单"</span>);</span><br><span class="line">        System.out.println(<span class="string">"商品名词    购买数量    单价    合计"</span>);</span><br><span class="line">        System.out.println(<span class="string">"水杯        1            20      20"</span>);</span><br><span class="line">        System.out.println(<span class="string">"书包        2           120      240"</span>);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<pre><code class="java">public class lists {
+    public static void main(String [] x){
+        System.out.println(&quot;        购物清单&quot;);
+        System.out.println(&quot;商品名词    购买数量    单价    合计&quot;);
+        System.out.println(&quot;水杯        1            20      20&quot;);
+        System.out.println(&quot;书包        2           120      240&quot;);
+    }
+}</code></pre>
+
             </div>
             <hr/>
 
