@@ -4,9 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="第四单元 -part1, Hexo">
-    <meta name="description" content="第四单元 运算符与语句 part1 运算符的使用动手任务1：算术运算符的使用1.算术运算符：+-*/%2.加号的使用: 相加，字符串连接，如果有连接的使用，后面都是连接。
-        System.out.println(3 + 4);">
+    <meta name="keywords" content="第四单元 -part2, Hexo">
+    <meta name="description" content="第四单元 语句的使用动手操作：任务1：If语句的使用    public boolean juder() {
+        if(3&amp;gt;0)
+            return true;
+        if(20&amp;lt;3)
+ ">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -14,7 +17,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>第四单元 -part1 | Hexo</title>
+    <title>第四单元 -part2 | Hexo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -304,12 +307,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/4.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/3.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">第四单元 -part1</h1>
+                    <h1 class="description center-align post-title">第四单元 -part2</h1>
                 </div>
             </div>
         </div>
@@ -426,8 +429,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E8%BF%90%E7%AE%97%E7%AC%A6/">
-                                <span class="chip bg-color">运算符</span>
+                            <a href="/tags/%E8%AF%AD%E5%8F%A5/">
+                                <span class="chip bg-color">语句</span>
                             </a>
                         
                     </div>
@@ -468,65 +471,121 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="第四单元-运算符与语句-part1-运算符的使用"><a href="#第四单元-运算符与语句-part1-运算符的使用" class="headerlink" title="第四单元 运算符与语句 part1 运算符的使用"></a>第四单元 运算符与语句 part1 运算符的使用</h1><h3 id="动手任务1：算术运算符的使用"><a href="#动手任务1：算术运算符的使用" class="headerlink" title="动手任务1：算术运算符的使用"></a>动手任务1：算术运算符的使用</h3><p>1.算术运算符：+-*/%<br>2.加号的使用: 相加，字符串连接，如果有连接的使用，后面都是连接。</p>
-<pre><code class="java">        System.out.println(3 + 4);//3+4=7；
-        System.out.println(&quot;china&quot;+3 +4);//china34，第一个加号是连接，第二个也是连接
-        System.out.println(3+4+&quot;china&quot;+3 +4);//7china 第一个加号是相加，第二个是连接。后面的都是相连了</code></pre>
-<p>3.减号的使用：  </p>
-<pre><code class="java">        System.out.println(1-0.9);//浮点型数转换成二进制的时候会有误差，0.09999999999999998
-        System.out.println(2.0-1.9);//同样有误差，每次答案都不相同</code></pre>
-<p>3.除号的使用<br>整数/整数=整数</p>
-<pre><code class="java">        System.out.println(3/2);//1
-        System.out.println(2/3);//0
-        System.out.println(2.0/3);//0.66666666
-//        System.out.println(3/0); //整数/0位错误
-        System.out.println(3.0/0);//Infinity,无穷大</code></pre>
-<p>4.取余数的使用  </p>
-<pre><code class="java">        System.out.println(3%2);//1
-        System.out.println(2%3);//2
-        System.out.println(2%3.0);//2.0
-        System.out.println(3.0%0);//NAN Not A Number</code></pre>
-<p>5:自加自减得使用：  </p>
-<pre><code class="java">        int age =10;
-        System.out.println(++age);//11
-        int grade =10;
-        System.out.println(grade++);//10
-        //System.out.println(300+); 常亮不可以进行自加操作  </code></pre>
-<h3 id="动手任务二：赋值运算符"><a href="#动手任务二：赋值运算符" class="headerlink" title="动手任务二：赋值运算符"></a>动手任务二：赋值运算符</h3><p>1.赋值=<br>不要超范围，不要类型不匹配<br>2.扩展的赋值运算符：<br>+=即自加<br>i+=2;<br>等同于<br>i=i+2;  </p>
-<pre><code class="java">        short weight = 100;// !的意思是，没有用过该变量！
-        weight += 1;// 存在着强制类型转换,不需要分配新的单元；
-        System.out.println(weight = weight + 1);// 错误</code></pre>
-<h3 id="动手任务三：关系运算符"><a href="#动手任务三：关系运算符" class="headerlink" title="动手任务三：关系运算符"></a>动手任务三：关系运算符</h3><p>出来的结果是Boolean类型</p>
-<blockquote>
-<p>大于<br>= 大于或等于<br>&lt; 小于<br>&lt;= 小于或等于<br>== 是否相等  </p>
-<p>!= 是否不等 ：关系运算符  </p>
-</blockquote>
-<pre><code class="java">        System.out.println(3!=0);//true
-        System.out.println(3 &gt;= 7);//false</code></pre>
-<h3 id="动手任务四：逻辑运算符"><a href="#动手任务四：逻辑运算符" class="headerlink" title="动手任务四：逻辑运算符"></a>动手任务四：逻辑运算符</h3><p><img src="https://img-blog.csdnimg.cn/20190904000253301.PNG?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTU5NDQxNw==,size_16,color_FFFFFF,t_70" alt="1"></p>
-<p>````java<br>public class LogicOperato {<br>    public void calc() {<br>        int a = 100;<br>        int b = 200;</p>
-<pre><code>  if(a&lt;38 &amp;++b&gt;10) {
-  }
-  System.out.println(b);//b=201
-
-    /**
-     * 短路与&amp;&amp;，前面的式子可以确定结果了，后面的就可以不执行了
-     * 短路 与的效率高
-     * 一般&amp;，就要执行所有的了；
+                <h1 id="第四单元-语句的使用"><a href="#第四单元-语句的使用" class="headerlink" title="第四单元 语句的使用"></a>第四单元 语句的使用</h1><h2 id="动手操作："><a href="#动手操作：" class="headerlink" title="动手操作："></a>动手操作：</h2><h3 id="任务1：If语句的使用"><a href="#任务1：If语句的使用" class="headerlink" title="任务1：If语句的使用"></a>任务1：If语句的使用</h3><pre><code class="java">    public boolean juder() {
+        if(3&gt;0)
+            return true;
+        if(20&lt;3)
+            return false;
+    }</code></pre>
+<p>这的代码是有问题的，虚拟机认为这个程序可能没有返回值。</p>
+<pre><code class="java">        if (3 &gt; 10)
+            System.out.println(&quot;china&quot;);
+            System.out.println(&quot;test&quot;);</code></pre>
+<p>可以不加花括号，但是只有第一句话管用，后面的if管不到。该代码最后输出“text”。</p>
+<pre><code class="java">        if (3 &gt; 1) {
+            int age = 20;
+        }</code></pre>
+<p>这句不加花括号，就完蛋。if等这些句子后，如果是变量的定义语句，大括号必须要加的。</p>
+<pre><code class="java">/**
+     * 判断一个数是否为奇数
+     * @param num 给定的数字
+     * @return 是奇数，返回true，否则返回false
      */
-    if (a &lt; 38 &amp;&amp; ++b &gt; 10) {
-    }
-    System.out.println(b);//b=201
+    public boolean isOdd(int num) {
+        if (num % 2 !=0) {
+            return true;
+        } else {
+            return false;
+        }
+    }</code></pre>
+<p>奇数的判断程序。</p>
+<h3 id="任务2：If-else"><a href="#任务2：If-else" class="headerlink" title="任务2：If else"></a>任务2：If else</h3><pre><code class="java">if (3 &gt; 4) {
+            System.out.println(666);
+        } else {
+            System.out.println(888);
+        }</code></pre>
+<p>最后输出888</p>
+<h3 id="任务3：swiitch-语句"><a href="#任务3：swiitch-语句" class="headerlink" title="任务3：swiitch 语句"></a>任务3：swiitch 语句</h3><pre><code class="java">public static void main(String[] args) {
+        int age = 200;
+        switch (age) {
+        case 10:
+            System.out.println(&quot;我十岁了&quot;);
+            break;
+        default:
+            System.out.println(&quot;无匹配结果&quot;);
+        case 20:
+            System.out.println(&quot;我二十了&quot;);
+            break;
+        case 30:
+        case 40:
+            System.out.println(&quot;我三十了&quot;);
+            break;
+        }
+        String name=&quot;aaa&quot;;
+        switch(name) {
+        case &quot;aaa&quot;:
+            System.out.println(&quot;aaa&quot;);
+            break;
+        }
+        }</code></pre>
+<p>最后输出结果：<br>无匹配结果<br>我二十了<br>aaa</p>
+<ul>
+<li>switch注意事项<ul>
+<li>1.break可有可无</li>
+<li>2.不写的话，会接着往下走</li>
+<li>3.default可有可无，位置不一定在最后，后面加break就可以了。</li>
+<li>4.switch 括号中不可以放长整型。</li>
+<li>5.两个可以公用的</li>
+</ul>
+</li>
+</ul>
+<h3 id="任务三：for循环"><a href="#任务三：for循环" class="headerlink" title="任务三：for循环"></a>任务三：for循环</h3><pre><code class="java">//使用for打印0到4    
+        for (int j = 0; j &lt; 5; j++) {
+            System.out.println(&quot;for  循环输出的&quot;+j);
+        }</code></pre>
+<p>注意第二个式子一定是Boolean</p>
+<h3 id="任务四：break-contiue"><a href="#任务四：break-contiue" class="headerlink" title="任务四：break/contiue"></a>任务四：break/contiue</h3><p>break：结束整个循环<br>continue：跳过本次循环</p>
+<hr>
+<p>continue的使用：奇数从1加到50</p>
+<pre><code class="java">for (int i = 1; i &lt;= 50; i++) {
+            // 当为偶数的时候，跳过本次循环
+            if (i % 2 == 0) {
+                continue;
+            }
+            sum += i;
+        }</code></pre>
+<p>break的使用：奇数从1加到50，当和大于80的时候停止循环</p>
+<pre><code class="java">        for (int i = 1; i &lt;= 50; i++) {
+            // 当为偶数的时候，跳过本次循环
+            if (i % 2 == 0) {
+                continue;
+            }
+            if (sum &gt;= 90) {
+                break;
+            }
+            sum += i;
 
-}</code></pre><p>```</p>
-<p>&amp; 与 &amp;&amp; 的区别：&amp; 和 | 左右两边的式子一定会执行（比较笨），&amp;&amp; 和 || 只要左边的式子能得出结果，右边的式子就不会执行（比较聪明）</p>
-<h3 id="任务五-与运算和位运算（不重要，了解即可）"><a href="#任务五-与运算和位运算（不重要，了解即可）" class="headerlink" title="任务五:与运算和位运算（不重要，了解即可）"></a>任务五:与运算和位运算（不重要，了解即可）</h3><h3 id="口述1：-运算符的优先级问题："><a href="#口述1：-运算符的优先级问题：" class="headerlink" title="口述1： 运算符的优先级问题："></a>口述1： 运算符的优先级问题：</h3><p><img src="https://images2015.cnblogs.com/blog/1001990/201610/1001990-20161025144757265-1724289762.png" alt=""></p>
-<h3 id="口述2：-amp-amp-和-amp-的区别"><a href="#口述2：-amp-amp-和-amp-的区别" class="headerlink" title="口述2：&amp;&amp;和&amp;的区别"></a>口述2：&amp;&amp;和&amp;的区别</h3><p>&amp; 与 &amp;&amp; 的区别：&amp; 和 | 左右两边的式子一定会执行（比较笨），&amp;&amp; 和 || 只要左边的式子能得出结果，右边的式子就不会执行（比较聪明）</p>
-<h3 id="口述3：能否以0为除数"><a href="#口述3：能否以0为除数" class="headerlink" title="口述3：能否以0为除数"></a>口述3：能否以0为除数</h3><p>不可以，整数除0会报错，小数除0会出现NAN（不是一个数字）。</p>
-<h3 id="口述4-能否对常量做自加自减的运算呢？"><a href="#口述4-能否对常量做自加自减的运算呢？" class="headerlink" title="口述4: 能否对常量做自加自减的运算呢？"></a>口述4: 能否对常量做自加自减的运算呢？</h3><p>不可以，300+=1； 300=300+1，这是错误的</p>
-<h3 id="口述5：-扩展的赋值运算符有什么优势和特点？"><a href="#口述5：-扩展的赋值运算符有什么优势和特点？" class="headerlink" title="口述5： 扩展的赋值运算符有什么优势和特点？"></a>口述5： 扩展的赋值运算符有什么优势和特点？</h3><p>优势就是会内部进行强制的数值类型转化</p>
-<h3 id="口述6：-1-0-9的结果"><a href="#口述6：-1-0-9的结果" class="headerlink" title="口述6： 1-0.9的结果"></a>口述6： 1-0.9的结果</h3><p>结果是不确定的，因为浮点型数据进行二进制转化的时候会有误差，选择的时候选择最接近0.1的！</p>
-<h3 id=""><a href="#" class="headerlink" title=""></a></h3>
+        }</code></pre>
+<p><strong>结束循环的方式：break，return，System.exit(0)</strong></p>
+<h3 id="任务五：while语句"><a href="#任务五：while语句" class="headerlink" title="任务五：while语句"></a>任务五：while语句</h3><pre><code class="java"> //打印0到4    
+        int i = 0;
+        while(i&lt;5){
+            System.out.println(i);
+            i++;
+        }</code></pre>
+<h3 id="任务六：do-while语句"><a href="#任务六：do-while语句" class="headerlink" title="任务六：do-while语句"></a>任务六：do-while语句</h3><p> 条件为true时 重复执行，至少会执行一次 </p>
+<pre><code class="java">         //打印0到4
+        //与while的区别是，无论是否成立，先执行一次，再进行判断
+        int i = 0;
+        do{
+            System.out.println(i);
+            i++;           
+        } while(i&lt;5);</code></pre>
+<h3 id="口述题："><a href="#口述题：" class="headerlink" title="口述题："></a>口述题：</h3><h4 id="口述题1：结束循环有几种方法？"><a href="#口述题1：结束循环有几种方法？" class="headerlink" title="口述题1：结束循环有几种方法？"></a>口述题1：结束循环有几种方法？</h4><p> 3种：break，return,system.exit(0).</p>
+<h4 id="口述题2：双层for循环套用，内存有break，跳出那个循环？"><a href="#口述题2：双层for循环套用，内存有break，跳出那个循环？" class="headerlink" title="口述题2：双层for循环套用，内存有break，跳出那个循环？"></a>口述题2：双层for循环套用，内存有break，跳出那个循环？</h4><p> 跳出内存，break遵守就近原则。</p>
+<h4 id="break和continue的区别？"><a href="#break和continue的区别？" class="headerlink" title="break和continue的区别？"></a>break和continue的区别？</h4><p> break是跳出循环，continue是接着下一次的循环。</p>
+<h4 id="switch的参数可以是哪些类型？"><a href="#switch的参数可以是哪些类型？" class="headerlink" title="switch的参数可以是哪些类型？"></a>switch的参数可以是哪些类型？</h4><p>switch可以使用byte,short,int,char,String,enum</p>
+
             </div>
             <hr/>
 
@@ -551,7 +610,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://lzy-star-666.github.io/2020/03/24/Day07-%E8%BF%90%E7%AE%97%E7%AC%A6%E7%9A%84%E4%BD%BF%E7%94%A8/">https://lzy-star-666.github.io/2020/03/24/Day07-%E8%BF%90%E7%AE%97%E7%AC%A6%E7%9A%84%E4%BD%BF%E7%94%A8/</a>
+                    <a href="https://lzy-star-666.github.io/2020/03/24/Day08-%E8%AF%AD%E5%8F%A5%E7%9A%84%E4%BD%BF%E7%94%A8/">https://lzy-star-666.github.io/2020/03/24/Day08-%E8%AF%AD%E5%8F%A5%E7%9A%84%E4%BD%BF%E7%94%A8/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -589,8 +648,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E8%BF%90%E7%AE%97%E7%AC%A6/">
-                                    <span class="chip bg-color">运算符</span>
+                                <a href="/tags/%E8%AF%AD%E5%8F%A5/">
+                                    <span class="chip bg-color">语句</span>
                                 </a>
                             
                         </div>
@@ -756,10 +815,9 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="far fa-dot-circle"></i>&nbsp;本篇
-            </div>
+                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
                 <a href="/2020/03/24/Day07-%E8%BF%90%E7%AE%97%E7%AC%A6%E7%9A%84%E4%BD%BF%E7%94%A8/">
                     <div class="card-image">
@@ -778,9 +836,9 @@
                         
                     </div>
                     <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-24
-                            </span>
+                        <span class="publish-date">
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-24
+                        </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -793,7 +851,6 @@
                         </span>
                     </div>
                 </div>
-
                 
                 <div class="card-action article-tags">
                     
@@ -812,23 +869,23 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/03/24/Day08-%E8%AF%AD%E5%8F%A5%E7%9A%84%E4%BD%BF%E7%94%A8/">
+                <a href="/2020/03/24/Day06-%E6%99%AE%E9%80%9A%E7%B1%BB%E5%9E%8B%E5%92%8C%E5%BC%95%E7%94%A8%E7%B1%BB%E5%9E%8B/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="第四单元 -part2">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="第三单元 -part2">
                         
-                        <span class="card-title">第四单元 -part2</span>
+                        <span class="card-title">第三单元 -part2</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            第四单元 语句的使用动手操作：任务1：If语句的使用    public boolean juder() {
-        if(3&gt;0)
-            return true;
-        if(20&lt;3)
- 
+                            第三单元 part2 组合类型类型传递例子public class Worker {
+    int grade=4;
+    String name =&quot;zhangsan&quot;;
+
+    public static vo
                         
                     </div>
                     <div class="publish-info">
@@ -850,8 +907,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E8%AF%AD%E5%8F%A5/">
-                        <span class="chip bg-color">语句</span>
+                    <a href="/tags/%E7%BB%84%E5%90%88%E5%8F%98%E9%87%8F/">
+                        <span class="chip bg-color">组合变量</span>
                     </a>
                     
                 </div>
