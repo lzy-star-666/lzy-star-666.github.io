@@ -4,13 +4,12 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="第二单元 -part1, Hexo">
-    <meta name="description" content="第二单元 part1 类设计和编写特别提醒
-软件开始实际上是先设计再开发。
-直接写代码是一大禁忌，最后容易自己乱掉
-正确的方法是先思考设计，再根据设计写代码
+    <meta name="keywords" content="第三单元 -part2, Hexo">
+    <meta name="description" content="第三单元 part2 组合类型类型传递例子public class Worker {
+    int grade=4;
+    String name =&amp;quot;zhangsan&amp;quot;;
 
-一、如何设计类用什么工具？ＥＡ、ＶＰ、ＵＭＬ工具等等我们使用的是：Softwar">
+    public static vo">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -18,7 +17,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>第二单元 -part1 | Hexo</title>
+    <title>第三单元 -part2 | Hexo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -308,12 +307,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/19.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/15.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">第二单元 -part1</h1>
+                    <h1 class="description center-align post-title">第三单元 -part2</h1>
                 </div>
             </div>
         </div>
@@ -430,8 +429,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E7%B1%BB%E8%AE%BE%E8%AE%A1%E5%92%8C%E7%BC%96%E5%86%99/">
-                                <span class="chip bg-color">类设计和编写</span>
+                            <a href="/tags/%E7%BB%84%E5%90%88%E5%8F%98%E9%87%8F/">
+                                <span class="chip bg-color">组合变量</span>
                             </a>
                         
                     </div>
@@ -455,7 +454,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-03-23
+                    2020-03-24
                 </div>
                 
 
@@ -472,41 +471,66 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="第二单元-part1-类设计和编写"><a href="#第二单元-part1-类设计和编写" class="headerlink" title="第二单元 part1 类设计和编写"></a>第二单元 part1 类设计和编写</h1><h2 id="特别提醒"><a href="#特别提醒" class="headerlink" title="特别提醒"></a>特别提醒</h2><ul>
-<li>软件开始实际上是先设计再开发。</li>
-<li>直接写代码是一大禁忌，最后容易自己乱掉</li>
-<li>正确的方法是先思考设计，再根据设计写代码</li>
-</ul>
-<h2 id="一、如何设计类"><a href="#一、如何设计类" class="headerlink" title="一、如何设计类"></a>一、如何设计类</h2><p>用什么工具？<br>ＥＡ、ＶＰ、ＵＭＬ工具等等<br>我们使用的是：SoftwareIdeasModeler.exe<br>-谁来设计？<br>系统分析师，系统分析员</p>
-<h3 id="动手任务1：设计类"><a href="#动手任务1：设计类" class="headerlink" title="动手任务1：设计类"></a>动手任务1：设计类</h3><p>1.面向对象编程主线（步骤)<br>写类，创建对象，对象的调用方法<br>2.什么是类？<br>类就是类的简称，类是抽象的，不具体，不明确的。类说就是同类事物的概括。<br>3.什么是对象？<br>具体的事物就是对象<br>在编程的时候，就要和日常生活结合来理解。<br>实际办事情是对象在工作。<br>4.设计类<br>设计教务系统当中的学生类<br>5.在eclipse中写这个类Student<br>写类的时候，要加上注释  </p>
-<h3 id="动手任务2：带有包的类"><a href="#动手任务2：带有包的类" class="headerlink" title="动手任务2：带有包的类"></a>动手任务2：带有包的类</h3><ol>
-<li>为什么用包？<br>防止类名冲突，一个人一个包，包名不同，就可以区分  </li>
-<li>包怎么命名？<br>域名倒写.系统代码.单元模块  </li>
-</ol>
-<ul>
-<li>包的在本地的表现形式为文件的路径  </li>
-<li>全限定的类名com.ychs.corejava.unit2.student  </li>
-</ul>
-<h3 id="动手任务3：生成javaDoc文档"><a href="#动手任务3：生成javaDoc文档" class="headerlink" title="动手任务3：生成javaDoc文档"></a>动手任务3：生成javaDoc文档</h3><p>生成方法：Project-Generate JavaDoc<br>生成路径不建议更改；<br>-注意输入编码和字符集参数<br>-encoding    utf-8       -charset        utf-8  </p>
-<h3 id="如何使用Java-API-文档"><a href="#如何使用Java-API-文档" class="headerlink" title="如何使用Java API 文档"></a>如何使用Java API 文档</h3><ul>
-<li>Java API就是应用编程接口</li>
-<li>java.lang</li>
-<li>java.io</li>
-<li>java.util</li>
-<li>java.sql</li>
-<li>java.lang.reflect</li>
-<li>java开头的是Java基础包</li>
-<li>javax开头是扩展包</li>
-<li>org开头第三方的包</li>
-<li>com开头的是自定义包</li>
-<li>如何导入包？import java.util.*   这是我们一个偷懒的方法</li>
-</ul>
-<p>-导入包的次序：基础包，扩展包，第三方包，自定义包；</p>
-<h3 id="动手任务5：看API源码"><a href="#动手任务5：看API源码" class="headerlink" title="动手任务5：看API源码"></a>动手任务5：看API源码</h3><p>在百度中可以搜索到API的中文版<br>找到API源码;<br>或者在代码当中把他选中,在其中查看.</p>
-<h3 id="口述-1-OOP-是什么？"><a href="#口述-1-OOP-是什么？" class="headerlink" title="口述 1.OOP 是什么？"></a>口述 1.OOP 是什么？</h3><p>OOP是 面向对象程序设计,全称为Object Oriented Programming.</p>
-<h3 id="口述2-面向对象的步骤"><a href="#口述2-面向对象的步骤" class="headerlink" title="口述2.面向对象的步骤"></a>口述2.面向对象的步骤</h3><p>：写类，创建对象，对象的调用方法  </p>
-<h3 id="口述3-OOP的特征"><a href="#口述3-OOP的特征" class="headerlink" title="口述3.OOP的特征"></a>口述3.OOP的特征</h3><p>（继承，封装，多态），抽象. 前三个是主要的.  </p>
-<h3 id="口述4-如何理解类-如何理解对象-如何理解属性和方法"><a href="#口述4-如何理解类-如何理解对象-如何理解属性和方法" class="headerlink" title="口述4.如何理解类?如何理解对象?如何理解属性和方法?"></a>口述4.如何理解类?如何理解对象?如何理解属性和方法?</h3><p>类就是类的简称，类是抽象的，不具体，不明确的。类说就是同类事物的概括。<br>具体的事物就是对象.<br>属性是对象的特征,方法是对象的性为.前者有值,可以被赋值或引用;后者没有值,表示能够执行的操作. </p>
+                <h1 id="第三单元-part2-组合类型"><a href="#第三单元-part2-组合类型" class="headerlink" title="第三单元 part2 组合类型"></a>第三单元 part2 组合类型</h1><h3 id="类型传递例子"><a href="#类型传递例子" class="headerlink" title="类型传递例子"></a>类型传递例子</h3><pre><code class="java">public class Worker {
+    int grade=4;
+    String name =&quot;zhangsan&quot;;
+
+    public static void main(String[] args) {
+        // w1 是一个变量，类型是worker，是符合类型，Worker是它的值；
+        Worker w1=new Worker();
+        // 类名的首字母大写，变量名的首字母小写（骆驼命名）
+        // String，这也是一个引用类型
+        int age =21;
+    }
+}</code></pre>
+<p><img src="https://img-blog.csdnimg.cn/20200324095735713.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDc4NzQ5OA==,size_16,color_FFFFFF,t_70" alt="内存变化">引用类型会分别在栈和堆中开辟两个内存，当有等号的时候，栈的地址会指向堆的地址。</p>
+<h3 id="口述1：-怎样理解组合类型？"><a href="#口述1：-怎样理解组合类型？" class="headerlink" title="口述1： 怎样理解组合类型？"></a>口述1： 怎样理解组合类型？</h3><h3 id="口述2：内存的逻辑划分是什么？各部分的作用是什么？"><a href="#口述2：内存的逻辑划分是什么？各部分的作用是什么？" class="headerlink" title="口述2：内存的逻辑划分是什么？各部分的作用是什么？"></a>口述2：内存的逻辑划分是什么？各部分的作用是什么？</h3><p>！1.栈：放的是局部变量，用于频繁的数据交换，特点是先进后出。由OS（操作系统）来管理，程序员无法掌控。<br>！2.堆： 放的对象,new出来的东西放在堆区。<br>3.全局数据区：全局变量，static变量。<br>4.代码段：放代码的地方  。<br>5.内存单元都有唯一编号</p>
+<h3 id="口述3：基本类型传递和引用类型值传递的区别？"><a href="#口述3：基本类型传递和引用类型值传递的区别？" class="headerlink" title="口述3：基本类型传递和引用类型值传递的区别？"></a>口述3：基本类型传递和引用类型值传递的区别？</h3><pre><code class="java">public class ValueTransfer {
+    /**
+     * 
+     * @param age年龄
+     * @return 折半的值
+     */
+    public int harf(int age) {
+        System.out.println(age);//20
+        int result = age / 2;
+        System.out.println(age);//10
+        return result;
+
+    }
+
+    public void change(Worker wx) {
+        wx.grade = 100;
+        wx.name = &quot;李宁&quot;;
+    }
+
+    public static void main(String[] args) {
+        ValueTransfer valueTransfer = new ValueTransfer();
+        int x = 20;
+        int result = valueTransfer.harf(20);
+        System.out.println(x); // 20
+        System.out.println(result);// 10
+
+        Worker xa = new Worker();
+        valueTransfer.change(xa);
+        System.out.println(xa.grade);
+        System.out.println(xa.name);
+
+    }
+}</code></pre>
+<p>简单类型传递就是值得复制，不会对原值产生影响；<br>引用类型的值实际上是内存地址，传递的过程就是地址的指向。<img src="https://img-blog.csdnimg.cn/2020032411065283.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDc4NzQ5OA==,size_16,color_FFFFFF,t_70" alt="引用类型的传递过程"></p>
+<h3 id="口述4：java的垃圾回收机制（GC机制）？"><a href="#口述4：java的垃圾回收机制（GC机制）？" class="headerlink" title="口述4：java的垃圾回收机制（GC机制）？"></a>口述4：java的垃圾回收机制（GC机制）？</h3><p>gc：Garbage Collector<br>垃圾：堆区中不用的对象；<br>内存泄漏：无用对象还在内存中待着；<br>自动垃圾回收机制，<br>面试题：Java有没有可能内存泄漏？<br>答：有可能的。<br>*<em>面试题：System.gc()方法能否强迫JVM进行垃圾回收 *</em><br>不可以的，gc方法只是建议JVM进行垃圾回收；<br>gc方法一调用，JVM就立刻工作回收垃圾（×）<br>Object:finalize()：在正式回收垃圾前它可被调用，做一些收尾的工作；<br>程序员能否深度干预垃圾回收？ 不可以  </p>
+<h3 id="独立任务：不用两个中间变量进行数值交换"><a href="#独立任务：不用两个中间变量进行数值交换" class="headerlink" title="独立任务：不用两个中间变量进行数值交换"></a>独立任务：不用两个中间变量进行数值交换</h3><p>1、加减法：该方法可以交换整型和浮点型数值的变量，但在处理浮点型的时候有可能出现精度的损失</p>
+<p>a = a + b;</p>
+<p>b = a - b;</p>
+<p>a = a - b;</p>
+<p>2、异或法：可以完成对整型变量的交换，对于浮点型变量它无法完成交换。</p>
+<p>a = a^b;</p>
+<p>b = a^b;</p>
+<p>a = a^b;<br>3、乘除法：可以处理整型和浮点型变量，但在处理浮点型变量时也存在精度损失问题。而且乘除法比加减法要多一条约束：b必不为0。</p>
+<p>a = a * b</p>
+<p>b = a / b</p>
+<p>a = a / b</p>
 
             </div>
             <hr/>
@@ -532,7 +556,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://lzy-star-666.github.io/2020/03/23/%E7%B1%BB%E8%AE%BE%E8%AE%A1%E5%92%8C%E7%BC%96%E5%86%99/">https://lzy-star-666.github.io/2020/03/23/%E7%B1%BB%E8%AE%BE%E8%AE%A1%E5%92%8C%E7%BC%96%E5%86%99/</a>
+                    <a href="https://lzy-star-666.github.io/2020/03/24/Day06-%E6%99%AE%E9%80%9A%E7%B1%BB%E5%9E%8B%E5%92%8C%E5%BC%95%E7%94%A8%E7%B1%BB%E5%9E%8B/">https://lzy-star-666.github.io/2020/03/24/Day06-%E6%99%AE%E9%80%9A%E7%B1%BB%E5%9E%8B%E5%92%8C%E5%BC%95%E7%94%A8%E7%B1%BB%E5%9E%8B/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -570,8 +594,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E7%B1%BB%E8%AE%BE%E8%AE%A1%E5%92%8C%E7%BC%96%E5%86%99/">
-                                    <span class="chip bg-color">类设计和编写</span>
+                                <a href="/tags/%E7%BB%84%E5%90%88%E5%8F%98%E9%87%8F/">
+                                    <span class="chip bg-color">组合变量</span>
                                 </a>
                             
                         </div>
@@ -737,31 +761,34 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/2020/03/23/%E7%B1%BB%E7%9A%84%E4%BD%BF%E7%94%A8/">
+                <a href="/2020/03/24/Day06-%E6%99%AE%E9%80%9A%E7%B1%BB%E5%9E%8B%E5%92%8C%E5%BC%95%E7%94%A8%E7%B1%BB%E5%9E%8B/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="第二单元 -part2">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="第三单元 -part2">
                         
-                        <span class="card-title">第二单元 -part2</span>
+                        <span class="card-title">第三单元 -part2</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            第二单元 part2 使用设计好的类动手任务1 ：使用类的方法想使用类，必须先创建主方法，在主方法里面调用。步骤:1,写类.2,在主方法里面创建对象3,在主方法里调用        
-/*创建名为张三的对象*/
-        Studen
+                            第三单元 part2 组合类型类型传递例子public class Worker {
+    int grade=4;
+    String name =&quot;zhangsan&quot;;
+
+    public static vo
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-23
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-24
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -774,11 +801,12 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E7%B1%BB%E7%9A%84%E4%BD%BF%E7%94%A8/">
-                        <span class="chip bg-color">类的使用</span>
+                    <a href="/tags/%E7%BB%84%E5%90%88%E5%8F%98%E9%87%8F/">
+                        <span class="chip bg-color">组合变量</span>
                     </a>
                     
                 </div>
@@ -792,19 +820,20 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/03/23/HelloWold%E4%B8%8E%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/">
+                <a href="/2020/03/23/Day-05%E5%8F%98%E9%87%8F%E7%9A%84%E4%BD%BF%E7%94%A8/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="第一单元 -part1">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="第三单元 -part1">
                         
-                        <span class="card-title">第一单元 -part1</span>
+                        <span class="card-title">第三单元 -part1</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            第一单元：JAVA开发起步-HelloWorl的编写动手任务动手任务一：下载并安装JDK1.下载JDK下载官网： http://www.oracle.com/technetwork/java/javase/overview/index.ht
+                            第三单元  数据类型与变量  part1 基本类型动手任务1： print和printlnprint不会自动换行，println会自动换行
+            System.out.print(&quot;同学们好！\n&quot;);
                         
                     </div>
                     <div class="publish-info">
@@ -826,8 +855,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/">
-                        <span class="chip bg-color">环境配置</span>
+                    <a href="/tags/%E5%9F%BA%E6%9C%AC%E5%8F%98%E9%87%8F/">
+                        <span class="chip bg-color">基本变量</span>
                     </a>
                     
                 </div>

@@ -4,8 +4,10 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="CoreJava第一单元-part2, Hexo">
-    <meta name="description" content="JAVA开发起步-Eclipse 的职业化使用背景介绍Eclipse是Java的开发工具之一。其他的开发工具有：1.文本编辑器2.IDEA：商业软件3.IDE：免费的4.IDE5.NetBeans：SUN出门，Oracle产品，几乎没有人使">
+    <meta name="keywords" content="第二单元 -part2, Hexo">
+    <meta name="description" content="第二单元 part2 使用设计好的类动手任务1 ：使用类的方法想使用类，必须先创建主方法，在主方法里面调用。步骤:1,写类.2,在主方法里面创建对象3,在主方法里调用        
+/*创建名为张三的对象*/
+        Studen">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +15,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>CoreJava第一单元-part2 | Hexo</title>
+    <title>第二单元 -part2 | Hexo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -303,12 +305,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/20.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">CoreJava第一单元-part2</h1>
+                    <h1 class="description center-align post-title">第二单元 -part2</h1>
                 </div>
             </div>
         </div>
@@ -425,8 +427,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/Eclipse%E7%9A%84%E5%BC%80%E5%8F%91/">
-                                <span class="chip bg-color">Eclipse的开发</span>
+                            <a href="/tags/%E7%B1%BB%E7%9A%84%E4%BD%BF%E7%94%A8/">
+                                <span class="chip bg-color">类的使用</span>
                             </a>
                         
                     </div>
@@ -467,39 +469,61 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="JAVA开发起步-Eclipse-的职业化使用"><a href="#JAVA开发起步-Eclipse-的职业化使用" class="headerlink" title="JAVA开发起步-Eclipse 的职业化使用"></a>JAVA开发起步-Eclipse 的职业化使用</h3><h4 id="背景介绍"><a href="#背景介绍" class="headerlink" title="背景介绍"></a>背景介绍</h4><p>Eclipse是Java的开发工具之一。<br>其他的开发工具有：<br>1.文本编辑器<br>2.IDEA：商业软件<br>3.IDE：免费的<br>4.IDE<br>5.NetBeans：SUN出门，Oracle产品，几乎没有人使用  </p>
-<h4 id="动手任务"><a href="#动手任务" class="headerlink" title="动手任务"></a>动手任务</h4><h5 id="动手任务1：Eclipse的下载"><a href="#动手任务1：Eclipse的下载" class="headerlink" title="动手任务1：Eclipse的下载"></a>动手任务1：Eclipse的下载</h5><p>Eclipse的版本有：  </p>
-<ul>
-<li>开发JAVA</li>
-<li>开发Java EE</li>
-<li>开发C/C++</li>
-<li>PHP</li>
+                <h1 id="第二单元-part2-使用设计好的类"><a href="#第二单元-part2-使用设计好的类" class="headerlink" title="第二单元 part2 使用设计好的类"></a>第二单元 part2 使用设计好的类</h1><h3 id="动手任务1-：使用类的方法"><a href="#动手任务1-：使用类的方法" class="headerlink" title="动手任务1 ：使用类的方法"></a>动手任务1 ：使用类的方法</h3><p>想使用类，必须先创建主方法，在主方法里面调用。<br>步骤:<br>1,写类.<br>2,在主方法里面创建对象<br>3,在主方法里调用        </p>
+<pre><code class="java">/*创建名为张三的对象*/
+        Student zhangsan = new Student();
+/*调用吃这个方法,并将值赋值给eatResult*/
+        String eatResult = zhangsan.eat(&quot;薯条&quot;);
+        System.out.println(eatResult);</code></pre>
+<h3 id="动手任务2-使用构造方法"><a href="#动手任务2-使用构造方法" class="headerlink" title="动手任务2: 使用构造方法"></a>动手任务2: 使用构造方法</h3><ul>
+<li>构造方法不需要写在main方法里面</li>
+<li>构造方法: 构造方法同有两个条件：名字和类名相同没有返回类型</li>
+<li>构造方法的作用： 1.与new配合创造对象 2.给对象属性付初始值</li>
+<li>默认构造方法：程序员不写，JVM自动提供。写了话，就不提供了。</li>
 </ul>
-<p>注意：我们下JavaEE的<br>下载网址：<a href="https://www.eclipse.org" target="_blank" rel="noopener">https://www.eclipse.org</a><br>解压后，就可以使用。</p>
-<h5 id="动手任务2：Eclipse的配置"><a href="#动手任务2：Eclipse的配置" class="headerlink" title="动手任务2：Eclipse的配置"></a>动手任务2：Eclipse的配置</h5><p>1.更换编码<br>Window-Preferences-搜索Workspace<br><img src="https://img-blog.csdnimg.cn/2020032310303994.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDc4NzQ5OA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述">2.代码自动提示<br><img src="https://img-blog.csdnimg.cn/20200323103318608.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDc4NzQ5OA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述">3.JDk的关联与配置<br><img src="https://img-blog.csdnimg.cn/20200323103825958.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDc4NzQ5OA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述">)<img src="https://img-blog.csdnimg.cn/20200323103845638.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDc4NzQ5OA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述">4.新建JAVA工程<br>ctrl+N，名字不要有汉字<br>5.新建Class<br>6.字体的调整<br>　　设置代码的字体类型和大小：<br>Window -&gt; Preferences -&gt; General -&gt; Appearance -&gt; Content Assist -&gt; Colors and Fornts，只需修改 Basic 里面的 Text Font 就可以了。<br>7.开头的注释生成<br><img src="https://img-blog.csdnimg.cn/20200323104629891.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDc4NzQ5OA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述">)<img src="https://img-blog.csdnimg.cn/20200323104733194.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDc4NzQ5OA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述"></p>
-<h5 id="动手任务三：安装阿里巴巴检查插件"><a href="#动手任务三：安装阿里巴巴检查插件" class="headerlink" title="动手任务三：安装阿里巴巴检查插件"></a>动手任务三：安装阿里巴巴检查插件</h5><p>注意：我们要写高质量的代码<br>安装第一步：<br><img src="https://img-blog.csdn.net/20180816163005215?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMyNDQ4MzQ5/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="在这里插入图片描述"></p>
-<p> 第二步: <a href="https://p3c.alibaba.com/plugin/eclipse/update" target="_blank" rel="noopener">https://p3c.alibaba.com/plugin/eclipse/update</a><br><img src="https://img-blog.csdn.net/20180816163148144?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzMyNDQ4MzQ5/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="在这里插入图片描述"></p>
-<p>  点击next，同意，然后eclipse安装，等一会eclipse会自动重启！我们就可以看到了。<br>  <img src="https://img-blog.csdnimg.cn/20200323105941367.png" alt="在这里插入图片描述"></p>
-<h5 id="动手任务五：Eclipse的快捷键"><a href="#动手任务五：Eclipse的快捷键" class="headerlink" title="动手任务五：Eclipse的快捷键"></a>动手任务五：Eclipse的快捷键</h5><ol>
-<li><p>Ctrl + D （删除当前行)</p>
-</li>
-<li><p>放大/还原代码区 Ctrl+M</p>
-</li>
-<li><p>Ctrl + Alt + ↓（复制当前行到下一行）</p>
-</li>
-<li><p>关闭当前代码 Ctrl+W</p>
-</li>
-<li><p>关闭所有代码区 Ctrl+Shift+W</p>
-</li>
-<li><p>Ctrl + Q 定位到最后编辑的地方。</p>
-</li>
-<li><p>格式化代码：Ctrl+shift+F （可能与输入法快捷冲突）</p>
-</li>
-<li><p>Ctrl+/ 注释当前行,再按则取消注释</p>
-<h5 id="动手任务六：Eclipse中GIt的使用"><a href="#动手任务六：Eclipse中GIt的使用" class="headerlink" title="动手任务六：Eclipse中GIt的使用"></a>动手任务六：Eclipse中GIt的使用</h5><p>详情可以参考：<a href="https://www.cnblogs.com/foxclever/p/9784034.html" target="_blank" rel="noopener">https://www.cnblogs.com/foxclever/p/9784034.html</a></p>
-</li>
-</ol>
-<h4 id="独立任务："><a href="#独立任务：" class="headerlink" title="独立任务："></a>独立任务：</h4><p>插件的安装与使用。</p>
+<pre><code class="java">/*这个是空的构造方法,而不是没有构造方法*/
+        public Person() {
+
+    }
+        public Person(String n, String s, int a) {
+        name = n;
+        sex = s;
+        age = a;
+    }
+    public Person (String n) {
+        name=n;
+    }</code></pre>
+<pre><code class="java">public static void main(String[] args) {
+        Person p1 =new Person();
+        /*属性有默认值，规则：对象默认null，整数默认0，小数默认0.0，布尔类型为false*/
+        System.out.println(&quot;第一个构造方法&quot; + p1.name+ &quot;  &quot; +  p1.age);
+        Person p2 =new Person(&quot;则毅&quot;);
+        System.out.println(p2.name);
+        Person p3 =new Person(&quot;张三&quot;,&quot;男&quot;,18);
+        System.out.println(p3.name + p3.sex + p3.age);
+    }</code></pre>
+<h3 id="动手任务3-如何接受键盘输入的内容"><a href="#动手任务3-如何接受键盘输入的内容" class="headerlink" title="动手任务3: 如何接受键盘输入的内容"></a>动手任务3: 如何接受键盘输入的内容</h3><p>1.导入Scanner接口：import java.util.Scanner;<br>2.声明scanner类；<br>3.使用这个：<br>scanner.nextInt(){输入整数的}<br>scanner,nextFloat(){输入小数}<br>scanner.nextLine(){输入字符串}   </p>
+<pre><code class="java">                /*接收键盘数据的对象，使用的Java API*/
+                Scanner scanner = new Scanner(System.in);
+                System.out.println(&quot;请输入出生年份&quot;);
+                /*接收键盘输入的整数*/
+                int year =scanner.nextInt();
+</code></pre>
+<h3 id="口述1-构造方法的特征及作用"><a href="#口述1-构造方法的特征及作用" class="headerlink" title="口述1:构造方法的特征及作用"></a>口述1:构造方法的特征及作用</h3><ul>
+<li>构造方法 构造方法同有两个条件：名字和类名相同且没有返回类型 </li>
+<li>构造方法的作用： 1.与new配合创造对象 2.给对象属性给予初始值</li>
+<li>默认构造方法：程序员不写，JVM自动提供。写了话，就不提供了。所以,至少有一个构造方法.</li>
+</ul>
+<h3 id="口述2-属性赋值方法有哪些-顺序是什么"><a href="#口述2-属性赋值方法有哪些-顺序是什么" class="headerlink" title="口述2:属性赋值方法有哪些,顺序是什么?"></a>口述2:属性赋值方法有哪些,顺序是什么?</h3><ul>
+<li>默认值</li>
+<li>显式赋值</li>
+<li>构造方法</li>
+<li>顺序:默认值,显式赋值,构造方法</li>
+</ul>
+<h3 id="口述3-什么是属性默认值"><a href="#口述3-什么是属性默认值" class="headerlink" title="口述3:什么是属性默认值?"></a>口述3:什么是属性默认值?</h3><ul>
+<li>就是没有给赋值,系统自己给的值.</li>
+<li>规则：对象默认null，整数默认0，小数默认0.0，布尔类型为false</li>
+</ul>
 
             </div>
             <hr/>
@@ -525,7 +549,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://lzy-star-666.github.io/2020/03/23/Eclipse%E7%9A%84%E5%BC%80%E5%8F%91/">https://lzy-star-666.github.io/2020/03/23/Eclipse%E7%9A%84%E5%BC%80%E5%8F%91/</a>
+                    <a href="https://lzy-star-666.github.io/2020/03/23/Day04-%E7%B1%BB%E7%9A%84%E4%BD%BF%E7%94%A8/">https://lzy-star-666.github.io/2020/03/23/Day04-%E7%B1%BB%E7%9A%84%E4%BD%BF%E7%94%A8/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -563,8 +587,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/Eclipse%E7%9A%84%E5%BC%80%E5%8F%91/">
-                                    <span class="chip bg-color">Eclipse的开发</span>
+                                <a href="/tags/%E7%B1%BB%E7%9A%84%E4%BD%BF%E7%94%A8/">
+                                    <span class="chip bg-color">类的使用</span>
                                 </a>
                             
                         </div>
@@ -734,19 +758,20 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/03/23/HelloWold%E4%B8%8E%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/">
+                <a href="/2020/03/23/Day-05%E5%8F%98%E9%87%8F%E7%9A%84%E4%BD%BF%E7%94%A8/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/17.jpg" class="responsive-img" alt="第一单元 -part1">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="第三单元 -part1">
                         
-                        <span class="card-title">第一单元 -part1</span>
+                        <span class="card-title">第三单元 -part1</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            第一单元：JAVA开发起步-HelloWorl的编写动手任务动手任务一：下载并安装JDK1.下载JDK下载官网： http://www.oracle.com/technetwork/java/javase/overview/index.ht
+                            第三单元  数据类型与变量  part1 基本类型动手任务1： print和printlnprint不会自动换行，println会自动换行
+            System.out.print(&quot;同学们好！\n&quot;);
                         
                     </div>
                     <div class="publish-info">
@@ -768,8 +793,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/">
-                        <span class="chip bg-color">环境配置</span>
+                    <a href="/tags/%E5%9F%BA%E6%9C%AC%E5%8F%98%E9%87%8F/">
+                        <span class="chip bg-color">基本变量</span>
                     </a>
                     
                 </div>
@@ -783,34 +808,36 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/03/22/%E6%88%91%E7%9A%84%E7%AC%AC%E4%B8%80%E7%AF%87%E5%8D%9A%E5%AE%A2/">
+                <a href="/2020/03/23/Day03-%E7%B1%BB%E8%AE%BE%E8%AE%A1%E5%92%8C%E7%BC%96%E5%86%99/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/16.jpg" class="responsive-img" alt="我的第一篇博客">
+                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="第二单元 -part1">
                         
-                        <span class="card-title">我的第一篇博客</span>
+                        <span class="card-title">第二单元 -part1</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            我的第一篇博客大家好，我是来自太原工业学院电子工程系的李则毅。我现在大三，正在英才汇硕学习JAVA全栈，以后我会用这个博客，更新我的日常生活和学习的。)我和我的小女友
+                            第二单元 part1 类设计和编写特别提醒
+软件开始实际上是先设计再开发。
+直接写代码是一大禁忌，最后容易自己乱掉
+正确的方法是先思考设计，再根据设计写代码
 
-
-
+一、如何设计类用什么工具？ＥＡ、ＶＰ、ＵＭＬ工具等等我们使用的是：Softwar
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-22
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-03-23
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/%E6%97%A5%E5%B8%B8/" class="post-category">
-                                    日常
+                            <a href="/categories/corejava/" class="post-category">
+                                    corejava
                                 </a>
                             
                             
@@ -820,8 +847,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E8%87%AA%E6%88%91%E4%BB%8B%E7%BB%8D/">
-                        <span class="chip bg-color">自我介绍</span>
+                    <a href="/tags/%E7%B1%BB%E8%AE%BE%E8%AE%A1%E5%92%8C%E7%BC%96%E5%86%99/">
+                        <span class="chip bg-color">类设计和编写</span>
                     </a>
                     
                 </div>

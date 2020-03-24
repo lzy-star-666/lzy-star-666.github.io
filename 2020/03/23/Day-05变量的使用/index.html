@@ -4,8 +4,9 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="第一单元 -part1, Hexo">
-    <meta name="description" content="第一单元：JAVA开发起步-HelloWorl的编写动手任务动手任务一：下载并安装JDK1.下载JDK下载官网： http://www.oracle.com/technetwork/java/javase/overview/index.ht">
+    <meta name="keywords" content="第三单元 -part1, Hexo">
+    <meta name="description" content="第三单元  数据类型与变量  part1 基本类型动手任务1： print和printlnprint不会自动换行，println会自动换行
+            System.out.print(&amp;quot;同学们好！\n&amp;quot;);">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -13,7 +14,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>第一单元 -part1 | Hexo</title>
+    <title>第三单元 -part1 | Hexo</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -303,12 +304,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/17.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/14.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">第一单元 -part1</h1>
+                    <h1 class="description center-align post-title">第三单元 -part1</h1>
                 </div>
             </div>
         </div>
@@ -425,8 +426,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/">
-                                <span class="chip bg-color">环境配置</span>
+                            <a href="/tags/%E5%9F%BA%E6%9C%AC%E5%8F%98%E9%87%8F/">
+                                <span class="chip bg-color">基本变量</span>
                             </a>
                         
                     </div>
@@ -467,67 +468,165 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h3 id="第一单元：JAVA开发起步-HelloWorl的编写"><a href="#第一单元：JAVA开发起步-HelloWorl的编写" class="headerlink" title="第一单元：JAVA开发起步-HelloWorl的编写"></a>第一单元：JAVA开发起步-HelloWorl的编写</h3><h4 id="动手任务"><a href="#动手任务" class="headerlink" title="动手任务"></a>动手任务</h4><h5 id="动手任务一：下载并安装JDK"><a href="#动手任务一：下载并安装JDK" class="headerlink" title="动手任务一：下载并安装JDK"></a>动手任务一：下载并安装JDK</h5><p>1.下载JDK<br>下载官网： <a href="http://www.oracle.com/technetwork/java/javase/overview/index.html" target="_blank" rel="noopener">http://www.oracle.com/technetwork/java/javase/overview/index.html</a><br>开发上以JavaSE8为主，公司上不追新。根据自己的平台选择下载。</p>
-<p>2.JDK的安装<br>jdk-8u144<br>u是update的缩写，第八个版本的144次更新。<br>安装过程中，一路下一步，不需要更改路径。<br>默认路径：C:\Program Files\Java\jdk1.8.0_144<br>整个的安装过程实际上就是一个解压的过程，并非一个安装过程。</p>
-<p>3.JDK是什么？<br>JDK是介于win和java的媒介，是java的舞台。没有JDK就不能让java运行。</p>
-<h6 id="动手任务二：配置环境变量并验证"><a href="#动手任务二：配置环境变量并验证" class="headerlink" title="动手任务二：配置环境变量并验证"></a>动手任务二：配置环境变量并验证</h6><p>0.bin：Bin是文件的名字，里面存放的一般是可执行的二进制文件,所以我们通常使用较大型的软件时都会发现有这个名称的文件夹。</p>
-<p>1.配置环境变量：<br>方法一：利用此电脑。<br>用户变量，系统变量。建议配置在系统变量中。<br>path路径就是刚刚JDK的安装中，bin的文件夹。<br>C:\Program Files\Java\jdk1.8.0_144\bin<br>CLASSPATH路径 ，变量值：（.;） 现在CLASSPATH也可以不配置了<br>问题一：CLASSPATH能否换成小写呢？<br>在windows情况下不区分，其他情况区分。<br>方法二：<br>窗口+R.输入：sysdm.cpl<br>2.验证是否成功<br>方法一：窗口+R 输入：cmd 调出控制窗口 ，在控制窗口输入java或者javac（推荐）<br><img src="https://img-blog.csdnimg.cn/20200313164441611.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDc4NzQ5OA==,size_16,color_FFFFFF,t_70" alt="Snipaste_2020-03-13_11-16-30"><br>如上图所示，是成功的界面。<br><img src="https://img-blog.csdnimg.cn/20200313164456900.png" alt="Snipaste_2020-03-13_11-19-39"></p>
-<p>该界面是失败的界面，一般是path环境变量设置的问题，bin的路径不正确或者丢失了。</p>
-<p>方法二：set path 当前环境变量的值</p>
-<p>如果能看到我们刚刚设计的环境变量，则配置成功了。</p>
-<p>注：当用户变量和系统变量不一样的时候，用户变量会覆盖系统变量。</p>
-<p>java -version 查看起作用的版本。<br><img src="https://img-blog.csdnimg.cn/20200313164512596.png" alt="Snipaste_2020-03-13_11-21-30"></p>
-<h6 id="动手任务三：编写HelloWorld"><a href="#动手任务三：编写HelloWorld" class="headerlink" title="动手任务三：编写HelloWorld"></a>动手任务三：编写HelloWorld</h6><p>创捷目录，不要有汉字。<br>1.打开笔记本： 窗口+R：notepad</p>
-<p>输入代码</p>
-<pre><code class="Java">public class HelloWorld {
-    public static void main(String [] arge){
-        System.out.println(&quot;HEllo...&quot;);
-    }
-}</code></pre>
-<p>2.保存文件    </p>
-<p>注意文件名字的大小写，后缀为java，保存类型为所用文件。编码类型记得更改。<br>3.编译程序 javac<br>调出控制窗口<br>切换盘符，走到自己的目录。 e:回车    </p>
-<p><img src="https://img-blog.csdnimg.cn/20200313164612427.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NDc4NzQ5OA==,size_16,color_FFFFFF,t_70" alt="Snipaste_2020-03-13_12-03-46"><br>tab键自动补充后面的文件的名字<br>cd： change directory<br>生成.class文件<br><img src="https://img-blog.csdnimg.cn/20200313164529731.png" alt="Snipaste_2020-03-13_11-48-59">  </p>
-<p>4.执行程序 java<br><img src="https://img-blog.csdnimg.cn/20200313164537645.png" alt="Snipaste_2020-03-13_12-16-28">  </p>
-<p>使用ue打开HelloWorld.class<br><img src="https://img-blog.csdnimg.cn/20200313164546157.png" alt="Snipaste_2020-03-13_12-23-37"><br><strong>左边为地址，右边为汇编语言，注意所有.class文件的开头都是CA FE BA BE，十六进制的数字。 （面试题）</strong></p>
-<p>字就是被修饰的那个。一个java文件当中可以有好多个类，但是只能有一个public修饰。如果没有public修饰，文件名随意命名。  </p>
-<p>每个java程序都有入口，就是main，写法固定  </p>
-<pre><code class="java">public static void main (String [] arge)</code></pre>
-<p><strong>面试题：编译过程区分大小写吗？</strong><br><strong>window不区分，其他区分。</strong><br><strong>执行区分大小写吗？</strong><br><strong>区分大小写。</strong><br><strong>总结：编译不分区，执行区分。</strong></p>
-<p>一个类被public修饰，那么文件名就是被public所修饰的那个类  </p>
-<h4 id="口述题"><a href="#口述题" class="headerlink" title="口述题"></a>口述题</h4><h5 id="一-JDK，JRE，JVM的关系是什么？（解释，他们是什么再说他们的关心）"><a href="#一-JDK，JRE，JVM的关系是什么？（解释，他们是什么再说他们的关心）" class="headerlink" title="一.JDK，JRE，JVM的关系是什么？（解释，他们是什么再说他们的关心）"></a>一.JDK，JRE，JVM的关系是什么？（解释，他们是什么再说他们的关心）</h5><p><a href="https://www.cnblogs.com/liulei5210/p/10115130.html" target="_blank" rel="noopener">https://www.cnblogs.com/liulei5210/p/10115130.html</a><br>JDK：Java Development Kit     java开发工具<br>JRE：Java Runtime Environmen  java运行环境<br>JVM：Java Virtual Machine  Java虚拟机<br>关系：JDK 包含JRE,JRE包含JVM。</p>
-<h5 id="二-java程序的执行过程？"><a href="#二-java程序的执行过程？" class="headerlink" title="二.java程序的执行过程？"></a>二.java程序的执行过程？</h5><p>0.源程序经过编译，生成.class文件。JVM对.class文件进行解释，把.class文件解释成特定平台的机  器指令，其实就是汇编代码。</br><br>1.class文件是什么</br><br>.class 文件是字节码文件，里面放的虚拟机的指令</br><br><strong>4.class 文件与平台无关</strong><br>2.JVM的作用：把class文件转换成机器的语言。<br>3<strong>.JVM与平台相关</strong>，他相当与一个翻译官，把.class文件转换成不同的平台的不同的汇编代码/<br>java程序写一次到处执行&lt;</p>
-<h5 id="三-java平台的划分"><a href="#三-java平台的划分" class="headerlink" title="三.java平台的划分"></a>三.java平台的划分</h5><p><img src="https://img-blog.csdnimg.cn/20200313164556790.png" alt="Snipaste_2020-03-13_13-21-47"></p>
-</br>
-写SE ME EE就可以了   
+                <h1 id="第三单元-数据类型与变量-part1-基本类型"><a href="#第三单元-数据类型与变量-part1-基本类型" class="headerlink" title="第三单元  数据类型与变量  part1 基本类型"></a>第三单元  数据类型与变量  part1 基本类型</h1><h3 id="动手任务1：-print和println"><a href="#动手任务1：-print和println" class="headerlink" title="动手任务1： print和println"></a>动手任务1： print和println</h3><p>print不会自动换行，println会自动换行</p>
+<pre><code>            System.out.print(&quot;同学们好！\n&quot;);
+            System.out.println(&quot;你好&quot;);</code></pre><h3 id="动手任务2：转义字符的使用"><a href="#动手任务2：转义字符的使用" class="headerlink" title="动手任务2：转义字符的使用"></a>动手任务2：转义字符的使用</h3><p><img src="https://bkimg.cdn.bcebos.com/pic/3bf33a87e950352ab1edf5555043fbf2b3118bdb?x-bce-process=image/watermark,g_7,image_d2F0ZXIvYmFpa2U4MA==,xp_5,yp_5" alt="6"></p>
+<h3 id="口述1：成员变量，局部变量是什么，怎么区分？"><a href="#口述1：成员变量，局部变量是什么，怎么区分？" class="headerlink" title="口述1：成员变量，局部变量是什么，怎么区分？"></a>口述1：成员变量，局部变量是什么，怎么区分？</h3><p>成员变量是整体的，在整个类都生效的；局部变量：方法和语句块内定义的的变量。<br>并且局部变量必须初始化（赋值），否则会报错；<br>分辨的方法就是看他们的出生地点；</p>
+<h3 id="口述2：什么是标识符？标识符命名归则是什么？"><a href="#口述2：什么是标识符？标识符命名归则是什么？" class="headerlink" title="口述2：什么是标识符？标识符命名归则是什么？"></a>口述2：什么是标识符？标识符命名归则是什么？</h3><p>Java 中标识符是为方法、变量或其他用户定义项所定义的名称。标识符的命名规则：以字母，$,_开头的，后面可以是数字。且不能是关键字。</p>
+<h3 id="口述3：什么是关键字？特点？多少个？"><a href="#口述3：什么是关键字？特点？多少个？" class="headerlink" title="口述3：什么是关键字？特点？多少个？"></a>口述3：什么是关键字？特点？多少个？</h3><p>Java关键字是电脑语言里事先定义的，有特别意义的标识符，有时又叫保留字，还有特别意义的变量。<br>特点是，他们都是小写的了。<br>一共有53个（其中包含两个保留字const，goto），true，false，null也算是。 </p>
+<h3 id="口述4：Java数据类型分类？分别是什么？"><a href="#口述4：Java数据类型分类？分别是什么？" class="headerlink" title="口述4：Java数据类型分类？分别是什么？"></a>口述4：Java数据类型分类？分别是什么？</h3><p><img src="https://img2018.cnblogs.com/blog/816787/201904/816787-20190413224824857-45884320.png" alt="1"><br>共11种：8种基本类型：<br>boolean：长度是多少？<br>大小尚不明确<br>byte ：一个字节占用8位 。范围：- 128<del>127；byte age =13；<br>char ：两个字节占用16位。 范围：0</del> 65535 。字符编码：Unicode<br>一个汉字几个字符？ 一个汉字一个字符！<br>只能存放一个字符，超过一个字符就会产生编译错误<br>short： 两个字节，16位数。 范围： -32768~32767.<br>int：四个字节，32位。 -2(n-1)–2(n)-1  n=32<br>long：八个字节，64位<br>后面L加不加啊？<br>如果超过int的最大值了，必须加！<br>float :小数，四个字节，32位 。<br>F或者f可以省去吗？<br>不可以省去的哦；<br>double：八个字节，64位数<br>F，f可以去。<br>*<em>小数默认类型为double，整数默认类型为int *</em>  </p>
+<p>引用数据类型3种：<br>类，接口，数组；</p>
+<h3 id="口述5：-String是不是内置程序类型，是不是关键字？"><a href="#口述5：-String是不是内置程序类型，是不是关键字？" class="headerlink" title="口述5： String是不是内置程序类型，是不是关键字？"></a>口述5： String是不是内置程序类型，是不是关键字？</h3><p>String不是内置程序类型，也不是关键字！</p>
+<h3 id="口述6：20，9-8的默认类型是什么？"><a href="#口述6：20，9-8的默认类型是什么？" class="headerlink" title="口述6：20，9.8的默认类型是什么？"></a>口述6：20，9.8的默认类型是什么？</h3><p>20的默认类型是int ，整数默认是int<br>9.8的默认类型是double，小数默认是double  </p>
+<h3 id="口述7：-float数据的f或者F可以省去吗？"><a href="#口述7：-float数据的f或者F可以省去吗？" class="headerlink" title="口述7： float数据的f或者F可以省去吗？"></a>口述7： float数据的f或者F可以省去吗？</h3><p>不可以的</p>
+<h3 id="口述8：boolean类型的数据长度是多少？"><a href="#口述8：boolean类型的数据长度是多少？" class="headerlink" title="口述8：boolean类型的数据长度是多少？"></a>口述8：boolean类型的数据长度是多少？</h3><p>根据官网所说，长度还没有明确的定义了。</p>
+<h3 id="口述9：Java基本数据类型转换规则？"><a href="#口述9：Java基本数据类型转换规则？" class="headerlink" title="口述9：Java基本数据类型转换规则？"></a>口述9：Java基本数据类型转换规则？</h3><p>有一种类型不能转换，那就是Boolean。<br>数据类型转换归则:低级类型转高级类型，自动；高级类型转低级类型，必须强制<br>在强制转换的过程中，很有可能会发生数据的丢失，具体的情况还需要看情况而定，位数的截取等情况，很有可能会发生。<br>char<br>byte int float double<br>(从左往右，从低到高)</p>
+<h3 id="课后任务："><a href="#课后任务：" class="headerlink" title="课后任务："></a>课后任务：</h3><p> Teacher类属性：教师年龄（byte）、教师月薪（short）、教师年薪（int）、 教师工号（long）、教师体重（float）、教师身高（double）、教师性别（char）、是否是教授（boolean）<br>    覆盖知识点：标识符、关键字和基本类型；标识符命名规则（面试题）、</p>
+<p>给每个属性提供setter/getter方法</p>
+<pre><code class="java">public class Teacher {
+    String name;
+    byte age;
+    short monSalary;
+    int yeaSalary;
+    long teacherId;
+    float weight;
+    double tall;
+    char sex;
+    boolean teach;
 
-<h5 id="四-java语言的特点："><a href="#四-java语言的特点：" class="headerlink" title="四.java语言的特点："></a>四.java语言的特点：</h5><p>面向对象，跨平台   </p>
-<h5 id="五-java是编译型还是解释型"><a href="#五-java是编译型还是解释型" class="headerlink" title="五.java是编译型还是解释型:"></a>五.java是编译型还是解释型:</h5><p>java语言是编译与解释的结合体。  </p>
-<h5 id="六-C-C-JAVA的对比"><a href="#六-C-C-JAVA的对比" class="headerlink" title="六.C/C++/JAVA的对比"></a>六.C/C++/JAVA的对比</h5><p><img src="https://img-blog.csdnimg.cn/20200313164604653.png" alt="Snipaste_2020-03-13_13-25-44">  </p>
-<h5 id="七-java-出现时间"><a href="#七-java-出现时间" class="headerlink" title="七.java 出现时间"></a>七.java 出现时间</br></h5><p>1991年，正式发布在1995年五月二十三日。</p>
-<h5 id="八："><a href="#八：" class="headerlink" title="八："></a>八：</h5><p><strong>面试题：编译过程区分大小写吗？</strong><br><strong>window不区分，其他区分。</strong><br><strong>执行区分大小写吗？</strong><br><strong>区分大小写。</strong><br><strong>总结：编译不分区，执行区分。</strong></p>
-<h5 id="九："><a href="#九：" class="headerlink" title="九："></a>九：</h5><p>main前面的修饰符调换位置，程序能否编译和执行？<br>去掉main前面的修饰符，程序能否编译和执行？<br>去掉main形参中的方括号，程序能否编译和执行？<br>去掉main中形参，程序能否编译和执行？<br>将main形参中的方括号换成…（三个小数点），程序能否编译和执行？</p>
-<p>回答：<br>HelloWorld程序中，删除以下字段<br>删除static 能否编译(能) 能否执行(否)<br>删除void 能否编译(否) 能否执行(否)<br>删除[] 能否编译(能) 能否执行(否)<br>删除String [] args 能否编译(能) 能否执行(否)<br>将[]换成… 能否编译(能) 能否执行(能)<br>调换public与static的位置 能否编译(能) 能否执行(能)</p>
-<h4 id="独立任务"><a href="#独立任务" class="headerlink" title="独立任务"></a>独立任务</h4><h5 id="任务一：-看java历史："><a href="#任务一：-看java历史：" class="headerlink" title="任务一： 看java历史："></a>任务一： 看java历史：</h5><p>任职于太阳微系统的詹姆斯•高斯林等人于1990年代初开发Java语言的雏形，最初被命名为Oak，目标设置在家用电器等小型系统的程序语言，应用在电视机、电话、闹钟、烤面包机等家用电器的控制和通信。<br>由于这些智能化家电的市场需求没有预期的高，Sun公司放弃了该项计划。随着1990年代互联网的发展，Sun公司看见Oak在互联网上应用的前景，于是改造了Oak，于1995年5月以Java的名称正式发布。Java伴随着互联网的迅猛发展而发展，逐渐成为重要的网络编程语言。<br>Java语言的发展历史分为以下几个阶段：<br>1991 年Sun公司的James Gosling等人开始开发名称为 Oak 的语言。希望用于控制嵌入在有线电视交换盒、PDA等的微处理器<br>1994年将Oak语言更名为Java<br>1998年JDK1.2时，更名为Java 2 Platform<br>分为标准版J2SE,企业版J2EE,微型版J2ME<br>Java 既安全、可移植，又可跨平台，而且人们发现它能够解决Internet 上的大型应用问题<br>Internet使Java成为网上最流行的编程语言<br>Java对Internet的影响也意义深远<br>B/S的兴起 &amp; C/S的没落   </p>
-<h5 id="任务二：编程任务"><a href="#任务二：编程任务" class="headerlink" title="任务二：编程任务"></a>任务二：编程任务</h5><p>编程任务1： 在学员管理系统中，需要输出如下信息：<br>我是英才学员，以下是我的基本信息：<br>姓名：<strong>*<br>性别：*<br>学校：***</strong><br>籍贯：<strong>**<br>电话：<strong>***</strong></strong></p>
-<p>*号换成自己的信息</p>
-<pre><code class="java">public class Hi {
-    public static void main(String [] x){
-        System.out.println(&quot;我是英才学员，以下是我的基本信息：&quot;);
-        System.out.println(&quot;姓名：李则毅&quot;);
-        System.out.println(&quot;性别：男&quot;);
-        System.out.println(&quot;学校：太原工业学院&quot;);
-        System.out.println(&quot;籍贯：天津&quot;);
-        System.out.println(&quot;电话：13043206144&quot;);
+    /**
+     * 设置属性
+     * 
+     * @param n 名字
+     */
+    public void setName(String n) {
+        name = n;
     }
-}</code></pre>
-<p>任务二：  购物清单<br>商品名称     购买数量     单价      合计<br>水杯                 1           20        20<br>书包                 2          120       240</p>
-<pre><code class="java">public class lists {
-    public static void main(String [] x){
-        System.out.println(&quot;        购物清单&quot;);
-        System.out.println(&quot;商品名词    购买数量    单价    合计&quot;);
-        System.out.println(&quot;水杯        1            20      20&quot;);
-        System.out.println(&quot;书包        2           120      240&quot;);
+
+    /**
+     * 取回属性
+     * 
+     * @return 名字
+     */
+    public String getName() {
+        return name;
     }
+
+    /**
+     * 设置年龄属性
+     * 
+     * @param a 年龄
+     */
+    public void setAge(byte a) {
+        age = a;
+    }
+
+    /**
+     * 取回年龄属性
+     * 
+     * @return 年龄
+     */
+    public byte getAge() {
+        return age;
+    }
+
+    /**
+     * 设置月薪
+     * 
+     * @param m 月薪
+     */
+    public void setMon(short m) {
+        monSalary = m;
+    }
+
+    /**
+     * 取回月薪
+     * 
+     * @return 月薪
+     */
+    public short getMon() {
+        return monSalary;
+    }
+
+    public void setYea(int y) {
+        yeaSalary = y;
+    }
+
+    public int getYea() {
+        return yeaSalary;
+    }
+
+    public void setId(long Id) {
+        teacherId = Id;
+    }
+
+    public long getId() {
+        return teacherId;
+    }
+
+    public void setWeight(float w) {
+        weight = w;
+    }
+
+    public float getWeight() {
+        return weight;
+    }
+
+    public void setTall(double t) {
+        tall = t;
+    }
+
+    public double getTall() {
+        return tall;
+    }
+
+    public void setSex(char s) {
+        sex = s;
+    }
+
+    public char getSex() {
+        return sex;
+    }
+
+    public void setTeach(boolean flag) {
+        teach = flag;
+    }
+
+    public boolean getTeach() {
+        return teach;
+    }
+
+    public static void main(String[] args) {
+        /**
+         * 
+         */
+        Teacher p1 = new Teacher();
+        /**
+         * 调用setName,设置属性;
+         */
+        p1.setName(&quot;刘欢&quot;);
+        p1.setAge((byte) 12);
+        p1.setMon((short) 100);
+        p1.setYea(1200);
+        p1.setId(23102);
+        p1.setWeight(120f);
+        p1.setTall(180);
+        p1.setSex(&#39;男&#39;);
+        p1.setTeach(false);
+        /**
+         * 调用getName，取回属性;
+         */
+        System.out.println(&quot;姓名  &quot; + p1.getName());
+        System.out.println(&quot;年龄 &quot; + p1.getAge() + &quot;岁&quot;);
+        System.out.println(&quot;月薪&quot; + p1.getMon() + &quot;$&quot;);
+        System.out.println(&quot;年薪&quot; + p1.getYea() + &#39;$&#39;);
+        System.out.println(&quot;工号&quot;+ p1.getId());
+        System.out.println(&quot;体重&quot; + p1.getWeight() +&quot;kg&quot;);
+        System.out.println(&quot;身高&quot;+p1.getTall() +&quot;cm&quot;);
+        System.out.println(&quot;性别&quot;+ p1.getSex());
+        System.out.println(&quot;是否教课&quot;+ p1.getTeach());
+    }
+
 }</code></pre>
 
             </div>
@@ -554,7 +653,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://lzy-star-666.github.io/2020/03/23/HelloWold%E4%B8%8E%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/">https://lzy-star-666.github.io/2020/03/23/HelloWold%E4%B8%8E%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/</a>
+                    <a href="https://lzy-star-666.github.io/2020/03/23/Day-05%E5%8F%98%E9%87%8F%E7%9A%84%E4%BD%BF%E7%94%A8/">https://lzy-star-666.github.io/2020/03/23/Day-05%E5%8F%98%E9%87%8F%E7%9A%84%E4%BD%BF%E7%94%A8/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -592,8 +691,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E7%8E%AF%E5%A2%83%E9%85%8D%E7%BD%AE/">
-                                    <span class="chip bg-color">环境配置</span>
+                                <a href="/tags/%E5%9F%BA%E6%9C%AC%E5%8F%98%E9%87%8F/">
+                                    <span class="chip bg-color">基本变量</span>
                                 </a>
                             
                         </div>
@@ -763,29 +862,28 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/2020/03/23/%E7%B1%BB%E8%AE%BE%E8%AE%A1%E5%92%8C%E7%BC%96%E5%86%99/">
+                <a href="/2020/03/24/Day06-%E6%99%AE%E9%80%9A%E7%B1%BB%E5%9E%8B%E5%92%8C%E5%BC%95%E7%94%A8%E7%B1%BB%E5%9E%8B/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="第二单元 -part1">
+                        <img src="/medias/featureimages/15.jpg" class="responsive-img" alt="第三单元 -part2">
                         
-                        <span class="card-title">第二单元 -part1</span>
+                        <span class="card-title">第三单元 -part2</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            第二单元 part1 类设计和编写特别提醒
-软件开始实际上是先设计再开发。
-直接写代码是一大禁忌，最后容易自己乱掉
-正确的方法是先思考设计，再根据设计写代码
+                            第三单元 part2 组合类型类型传递例子public class Worker {
+    int grade=4;
+    String name =&quot;zhangsan&quot;;
 
-一、如何设计类用什么工具？ＥＡ、ＶＰ、ＵＭＬ工具等等我们使用的是：Softwar
+    public static vo
                         
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-23
+                            <i class="far fa-clock fa-fw icon-date"></i>2020-03-24
                         </span>
                         <span class="publish-author">
                             
@@ -802,8 +900,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E7%B1%BB%E8%AE%BE%E8%AE%A1%E5%92%8C%E7%BC%96%E5%86%99/">
-                        <span class="chip bg-color">类设计和编写</span>
+                    <a href="/tags/%E7%BB%84%E5%90%88%E5%8F%98%E9%87%8F/">
+                        <span class="chip bg-color">组合变量</span>
                     </a>
                     
                 </div>
@@ -817,19 +915,21 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/03/23/Eclipse%E7%9A%84%E5%BC%80%E5%8F%91/">
+                <a href="/2020/03/23/Day04-%E7%B1%BB%E7%9A%84%E4%BD%BF%E7%94%A8/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="CoreJava第一单元-part2">
+                        <img src="/medias/featureimages/20.jpg" class="responsive-img" alt="第二单元 -part2">
                         
-                        <span class="card-title">CoreJava第一单元-part2</span>
+                        <span class="card-title">第二单元 -part2</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            JAVA开发起步-Eclipse 的职业化使用背景介绍Eclipse是Java的开发工具之一。其他的开发工具有：1.文本编辑器2.IDEA：商业软件3.IDE：免费的4.IDE5.NetBeans：SUN出门，Oracle产品，几乎没有人使
+                            第二单元 part2 使用设计好的类动手任务1 ：使用类的方法想使用类，必须先创建主方法，在主方法里面调用。步骤:1,写类.2,在主方法里面创建对象3,在主方法里调用        
+/*创建名为张三的对象*/
+        Studen
                         
                     </div>
                     <div class="publish-info">
@@ -851,8 +951,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/Eclipse%E7%9A%84%E5%BC%80%E5%8F%91/">
-                        <span class="chip bg-color">Eclipse的开发</span>
+                    <a href="/tags/%E7%B1%BB%E7%9A%84%E4%BD%BF%E7%94%A8/">
+                        <span class="chip bg-color">类的使用</span>
                     </a>
                     
                 </div>
